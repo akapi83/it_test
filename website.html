@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Website-works|赤嶺祥のポートフォリオ</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="ウェブデザイナー赤嶺祥のポートフォリオです。HTML、CSS、Wordpress">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Bevan|Cinzel&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150393075-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150393075-5');
+</script>
+
+<!--[if lt IE 9]>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+   <link rel="shortcut icon" href="">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+   
+    <!-- jquery 読み込み -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+ 
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/bab523e654.js" crossorigin="anonymous"></script>
+  
+  <!-- slick -->
+  <link rel="stylesheet" href="js/slick/slick.css">
+   <link rel="stylesheet" href="js/slick/slick-theme.css">
+   <script src="js/slick/slick.min.js"></script>
+   <script src="js/slick/slick.js"></script>
+    
+<!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+ <!-- fadein アニメ-->
+     <script>
+     $(function(){
+    $(window).scroll(function (){
+        $('.fadein').each(function(){
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200){
+              $(this).addClass('active');
+            }
+        });
+    });
+});
+    </script>
+<!-- toppage scroll-->
+    <script>
+    jQuery(function() {
+    var pagetop = $('#page_top');   
+    pagetop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500); //0.5秒かけてトップへ移動
+        return false;
+    });
+});
+
+    </script>
+</head>
+<body>
+    <header>
+       <h1 class="logo-title"><a href="index.html"><img src="img/portfoliologo.png" alt="shomonzのポートフォリオ"></a></h1>
+       
+        <nav class="g-nav">
+            <ul class="flex-hr">
+                
+                <li id="top"><a href="index.html">TOP</a></li>
+                
+               
+                <li id="site"><a href="website.html">WEBSITE</a></li>
+               
+                
+                <li id="logo"><a href="banner.html">LOGO&amp;BANNER</a></li>
+                
+               
+                <li id="banner"> <a href="making.html">MAKING</a></li>
+                
+            </ul>
+        </nav>
+
+    </header>
+    <div class="container site-bg">
+       <div class="web-title">
+           <h2>Shomonz's</h2>
+           <h2 class="web-h2-af">website</h2>
+       </div>
+       <section class="web-item fadein">
+           <h3>宮里英克オフィシャルサイト</h3>
+           <div class="web-dec">
+                <div class="web-dec-img">
+                 <div class="pc-size">
+                     <img src="img/miyazato.png" alt="">
+                 </div>
+                 <div class="sp-size">
+                     <img src="img/miyazato_mobile.jpg" alt="">
+                 </div>
+                 </div>
+                 <div class="web-txt-wrap">
+                    <ul class="web-txt">
+                   <li class="website-icom">サイト名：宮里英克オフィシャルサイト</li>
+                   <li class="url-icon">URL：http://miyazatohidekatsu.com/</li>
+                   <li class="tool_icon">使用ツール：Wordpress, Photoshop, Illustrator</li>
+                   <li class="time_icon">制作時間：3週間</li>
+                   <li class="tanto_icon">担当：デザイン、コーディング、ディレクション</li>
+                   <li class="consept_icon">コンセプト：クライアントご自身で投稿、編集
+等を行いたいという希望に基づき、Wordpressで
+構築。ファーストビューをスライダーで大きく
+派手に見せつつ、ブログ形式でシンプルなデザ
+インにしました。
+また、投稿・編集の仕方を開設した
+動画を作成、提供しています。</li>
+               </ul>
+               </div>
+
+           </div>
+          <div class="web-more">
+              <a href="http://miyazatohidekatsu.com/" target="_blank"></a>
+          </div>
+       </section>
+       
+       <section class="web-item fadein">
+           <h3>MMI 消毒作業ページ</h3>
+           <div class="web-dec">
+                <div class="web-dec-img">
+                 <div class="pc-size">
+                     <img src="img/mmi-pc.jpg" alt="消毒作業">
+                 </div>
+                 <div class="sp-size">
+                     <img src="img/mmi-mobile.jpg" alt="消毒作業">
+                 </div>
+                 </div>
+                 <div class="web-txt-wrap">
+                    <ul class="web-txt">
+                   <li class="website-icom">サイト名：MMインターナショナル</li>
+                   <li class="url-icon">URL：http://mmin-net.co.jp/page-840/</li>
+                   <li class="tool_icon">使用ツール：Photoshop, Illustrator, Wordpress</li>
+                   <li class="time_icon">制作時間：8時間</li>
+                   <li class="tanto_icon">担当：デザイン、コーディング、ディレクション</li>
+                   <li class="consept_icon">コンセプト：消毒作業にふさわしい清潔感のあるカラーを意識してデザインし、現状の課題を訴求できる文言をバナーに加えました。</li>
+               </ul>
+               </div>
+
+           </div>
+          <div class="web-more">
+              <a href="http://mmin-net.co.jp/page-840/" target="_blank"></a>
+          </div>
+       </section>
+       
+       <section class="web-item fadein">
+           <h3>Bread Cafe・さくら</h3>
+           <div class="web-dec">
+                <div class="web-dec-img">
+                 <div class="pc-size">
+                     <img src="img/breadsakura.png" alt="カフェ">
+                 </div>
+                 <div class="sp-size">
+                     <img src="img/breadsakura_mobile.jpg" alt="カフェ">
+                 </div>
+                 </div>
+                 <div class="web-txt-wrap">
+                    <ul class="web-txt">
+                   <li class="website-icom">サイト名：Bread Cafe・さくら</li>
+                   <li class="url-icon">URL：http://breadsakura.html.xdomain.jp/</li>
+                   <li class="tool_icon">使用ツール：Brackets, Photoshop, Illustrator</li>
+                   <li class="time_icon">制作時間：2週間</li>
+                   <li class="tanto_icon">担当：デザイン、コーディング、ディレクション</li>
+                   <li class="consept_icon">コンセプト：店名のさくらから春をイメージしたデザインに。メニューをタイル状に配置してわかりやすく、また将来的にメニューが更新された際に、追加編集がしやすいように設計しました。</li>
+               </ul>
+               </div>
+
+           </div>
+          <div class="web-more">
+              <a href="http://breadsakura.html.xdomain.jp/" target="_blank"></a>
+          </div>
+       </section>
+
+          <section class="web-item fadein">
+           <h3>ダッフィーオーダーメイドコスチューム</h3>
+           <div class="web-dec">
+                <div class="web-dec-img">
+                 <div class="pc-size">
+                     <img src="img/daffy.png" alt="ダッフィーオーダーメイドコスチューム">
+                 </div>
+                 <div class="sp-size">
+                     <img src="img/daffy_mobile.jpg" alt="ダッフィーオーダーメイドコスチューム">
+                 </div>
+                 </div>
+                 <div class="web-txt-wrap">
+                    <ul class="web-txt">
+                   <li class="website-icom">サイト名：ダッフィーオーダーメイドコスチューム</li>
+                   <li class="url-icon">URL：http://daffy.shomonz.info/</li>
+                   <li class="tool_icon">使用ツール：Brackets, Photoshop, Illustrator</li>
+                   <li class="time_icon">制作時間：8時間</li>
+                   <li class="tanto_icon">担当：デザイン、コーディング、ディレクション</li>
+                   <li class="consept_icon">コンセプト：コスチューム制作中の動画を編集し、ハンドメイド感を演出。
+ペイパル決済を導入したECサイトとして制作。顧客層にスマホユーザーが多いことを想定し、スマホ表示時の見せ方に工夫をしています。</li>
+               </ul>
+               </div>
+
+           </div>
+          <div class="web-more">
+              <a href="http://daffy.shomonz.info/" target="_blank"></a>
+          </div>
+       </section>
+       
+        <section class="web-item fadein">
+           <h3>カンセイグループ株式会社</h3>
+           <div class="web-dec">
+                <div class="web-dec-img">
+                 <div class="pc-size">
+                     <img src="img/kansei.png" alt="カンセイグループ株式会社">
+                 </div>
+                 <div class="sp-size">
+                     <img src="img/kasei_mobile.jpg" alt="カンセイグループ株式会社">
+                 </div>
+                 </div>
+                 <div class="web-txt-wrap">
+                    <ul class="web-txt">
+                   <li class="website-icom">サイト名：カンセイグループ株式会社</li>
+                   <li class="url-icon">URL：http://kanseigroup.co.jp/</li>
+                   <li class="tool_icon">使用ツール：Wordpress, Photoshop, Illustrator</li>
+                   <li class="time_icon">制作時間：2週間</li>
+                   <li class="tanto_icon">担当：デザイン、コーディング、ディレクション</li>
+                   <li class="consept_icon">コンセプト：海外での活動における写真をメインに配置し、グローバル感を演出。日本語版と英語版の２サイトを作成。</li>
+               </ul>
+               </div>
+
+           </div>
+          <div class="web-more">
+              <a href="http://kanseigroup.co.jp/" target="_blank"></a>
+          </div>
+       </section>
+       
+           <section class="web-item fadein">
+           <h3>モンゴル語教室東京</h3>
+           <div class="web-dec">
+                <div class="web-dec-img">
+                 <div class="pc-size">
+                     <img src="img/minii-mongol.png" alt="モンゴル語教室東京">
+                 </div>
+                 <div class="sp-size">
+                     <img src="img/miniimongol_mobile.jpg" alt="モンゴル語教室東京">
+                 </div>
+                 </div>
+                 <div class="web-txt-wrap">
+                    <ul class="web-txt">
+                   <li class="website-icom">サイト名：モンゴル語教室東京</li>
+                   <li class="url-icon">URL：http://miniimongol.html.xdomain.jp/</li>
+                   <li class="tool_icon">使用ツール：Brackets, Photoshop, Illustrator</li>
+                   <li class="time_icon">制作時間：2週間</li>
+                   <li class="tanto_icon">担当：デザイン、コーディング、ディレクション</li>
+                   <li class="consept_icon">コンセプト：モンゴルの草原と、子どもたちの楽しさをイメージしてデザインを決定。在日モンゴル人への利便性を考慮し、日本、及び東京での暮らしや観光に役立つリンク先をバナーで配置。</li>
+               </ul>
+               </div>
+
+           </div>
+          <div class="web-more">
+              <a href="http://miniimongol.html.xdomain.jp/" target="_blank"></a>
+          </div>
+       </section>
+       
+          <section class="web-item fadein">
+           <h3>Monz handmade</h3>
+           <div class="web-dec">
+                <div class="web-dec-img">
+                 <div class="pc-size">
+                     <img src="img/handmade.png" alt="Monz handmade">
+                 </div>
+                 <div class="sp-size">
+                     <img src="img/handmade_mobile.jpg" alt="Monz handmade">
+                 </div>
+                 </div>
+                 <div class="web-txt-wrap">
+                    <ul class="web-txt">
+                   <li class="website-icom">サイト名：Monz handmade</li>
+                   <li class="url-icon">URL：http://siawasenet.html.xdomain.jp/daffy2/index.html</li>
+                   <li class="tool_icon">使用ツール：Brackets, Photoshop, Illustrator</li>
+                   <li class="time_icon">制作時間：8時間</li>
+                   <li class="tanto_icon">担当：デザイン、コーディング、ディレクション</li>
+                   <li class="consept_icon">コンセプト：ダッフィーの可愛らしいイメージを意識したデザインに。
+制作風景動画をバックで再生、代表作をギャラリーに並べる形で表現しました。</li>
+               </ul>
+               </div>
+
+           </div>
+          <div class="web-more">
+              <a href="http://siawasenet.html.xdomain.jp/daffy2/index.html" target="_blank"></a>
+          </div>
+       </section>
+       
+     <section class="web-item fadein">
+           <h3>モンゴル観光（サンプル）</h3>
+           <div class="web-dec">
+                <div class="web-dec-img">
+                 <div class="pc-size">
+                     <img src="img/mongolia.jpg" alt="モンゴル観光">
+                 </div>
+                 <div class="sp-size">
+                     <img src="img/mongolia_mobile.jpg" alt="モンゴル観光">
+                 </div>
+                 </div>
+                 <div class="web-txt-wrap">
+                    <ul class="web-txt">
+                   <li class="website-icom">サイト名：モンゴル観光</li>
+                   <li class="url-icon">URL：http://siawasenet.html.xdomain.jp/mongolia/index.html</li>
+                   <li class="tool_icon">使用ツール：Brackets, Photoshop, Illustrator</li>
+                   <li class="time_icon">制作時間：5時間</li>
+                   <li class="tanto_icon">担当：デザイン、コーディング</li>
+                   <li class="consept_icon">コンセプト：モンゴルの自然の雄大さを表現するため、背景固定のスクロール仕様にしました。</li>
+               </ul>
+               </div>
+
+           </div>
+          <div class="web-more">
+              <a href="http://siawasenet.html.xdomain.jp/mongolia/index.html" target="_blank"></a>
+          </div>
+       </section>
+       
+       <section class="web-item fadein">
+           <h3>天正寺御守会（サンプル）</h3>
+           <div class="web-dec">
+                <div class="web-dec-img">
+                 <div class="pc-size">
+                     <img src="img/tenshokai.jpg" alt="天正寺">
+                 </div>
+                 <div class="sp-size">
+                     <img src="img/tenshokai_mobile.jpg" alt="天正寺">
+                 </div>
+                 </div>
+                 <div class="web-txt-wrap">
+                    <ul class="web-txt">
+                   <li class="website-icom">サイト名：天正寺御守会</li>
+                   <li class="url-icon">URL：https://portfolio.shomonz.info/tenshokai/</li>
+                   <li class="tool_icon">使用ツール：Brackets, Photoshop, Illustrator</li>
+                   <li class="time_icon">制作時間：5時間</li>
+                   <li class="tanto_icon">担当：デザイン、コーディング</li>
+                   <li class="consept_icon">コンセプト：お寺と葬儀に関連した内容に合わせて落ち着いた、優しい色合いを意識ました。</li>
+               </ul>
+               </div>
+
+           </div>
+          <div class="web-more">
+              <a href="https://portfolio.shomonz.info/tenshokai/" target="_blank"></a>
+          </div>
+       </section>
+    </div>
+           
+               <div id="page_top"><a href="#"></a></div>
+            <footer>
+          <p>&copy; 2018 Shomonz All rights reserved.</p>  
+        </footer>
+        
+<script src="js/jQuery.js"></script>
+</body>
+</html>

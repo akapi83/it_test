@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Logo &amp; Banner|赤嶺祥のポートフォリオ</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="ウェブデザイナー赤嶺祥のポートフォリオです。HTML、CSS、Wordpress">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css"  href="css/banner.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150393075-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150393075-5');
+</script>
+
+<!--[if lt IE 9]>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+   <link rel="shortcut icon" href="">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   
+    <!-- jquery 読み込み -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+ 
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/bab523e654.js" crossorigin="anonymous"></script>
+<!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+ 
+<!-- toppage scroll-->
+    <script>
+    jQuery(function() {
+    var pagetop = $('#page_top');   
+    pagetop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500); //0.5秒かけてトップへ移動
+        return false;
+    });
+});
+
+    </script>
+</head>
+<body>
+    <header>
+       <h1 class="logo-title"><a href="index.html"><img src="img/portfoliologo.png" alt="shomonzのポートフォリオ"></a></h1>
+       
+        <nav class="g-nav">
+            <ul class="flex-hr">
+                
+                <li id="top"><a href="index.html">TOP</a></li>
+                
+               
+                <li id="site"><a href="website.html">WEBSITE</a></li>
+               
+                
+                <li id="logo"><a href="banner.html">LOGO&amp;BANNER</a></li>
+                
+               
+                <li id="banner"> <a href="making.html">MAKING</a></li>
+                
+            </ul>
+        </nav>
+
+    </header>
+<div class="container">
+    <article>
+        <section>
+            <h2 class="bn-h2"><span class="ini-orange">B</span>anner</h2>
+           <!-- 600x314-->
+            <ul class="bnlist">
+               <li data-aos="fade-up"><img src="img/banner/aribe.jpg" alt="リサイクル着物"></li>
+               <li data-aos="fade-left"><img src="img/banner/aribe02.jpg" alt="リサイクル着物"></li>
+               <li data-aos="fade-down"><img src="img/banner/ibera.jpg" alt="ボーイ・ソプラノ"></li>
+                <li data-aos="fade-up-right"><img src="img/banner/gyouseisyoshi.jpg" alt="行政書士"></li>
+                <li data-aos="fade-down-left"><img src="img/banner/cardloan.png" alt="カードローン"></li>
+                <li data-aos="fade-down"><img src="img/banner/adachi-houritsu.jpg" alt="法律相談"></li>
+                <li data-aos="fade-up"><img src="img/banner/adachi-houritus02.jpg" alt="カードローン"></li>
+            </ul>
+            <!-- 300x250 -->
+            <ul class="bnlist">
+                <li data-aos="fade-down"><img src="img/banner/watch01.jpg" alt=""></li>
+                <li data-aos="fade-left"><img src="img/banner/watch02_1.jpg" alt=""></li>
+                <li data-aos="fade-up"><img src="img/banner/watch03.jpg" alt=""></li>
+                <li data-aos="fade-right"><img src="img/banner/6-5-0417.jpg" alt=""></li>
+                <li data-aos="fade-left"><img src="img/banner/6-5-banner11.jpg" alt=""></li>
+                <li data-aos="fade-right"><img src="img/banner/6-5-bread-illust.png" alt=""></li>
+                <li data-aos="fade-up"><img src="img/banner/6-5-ducky.jpg" alt=""></li>
+                <li data-aos="fade-down"><img src="img/banner/6-5-illust-kaze.png" alt=""></li>
+                <li data-aos="fade-up-right"><img src="img/banner/6-5-kimchi200.jpg" alt=""></li>
+                <li data-aos="fade-up-left"><img src="img/banner/6-5-panda-banner.jpg" alt=""></li>
+                <li data-aos="fade-down-right"><img src="img/banner/6-5-party.jpg" alt=""></li>
+                <li data-aos="fade-up-left"><img src="img/banner/6-5-pasta.png" alt=""></li>
+                <li data-aos="fade-up-right"><img src="img/banner/6-5-sakura2019.png" alt=""></li>
+                <li data-aos="fade-left"><img src="img/banner/6-5-sneakers.jpg" alt=""></li>
+                <li data-aos="fade-right"><img src="img/banner/6-5-soccer.png" alt=""></li>
+                <li data-aos="fade-down-right"><img src="img/banner/6-5-sotsu.png" alt=""></li>
+                <li data-aos="fade-up"><img src="img/banner/6-5-watch.jpg" alt=""></li>
+                <li data-aos="fade-down"><img src="img/banner/6-5-world.jpg" alt=""></li>
+            </ul>
+            <!-- 600x200 -->
+            <ul class="bnlist">
+                <li data-aos="fade-left"><img src="img/banner/6-2-0417-200.jpg" alt=""></li>
+                <li data-aos="fade-up-right"><img src="img/banner/6-2-2019gahai.jpg" alt=""></li>
+                <li data-aos="fade-up-left"><img src="img/banner/6-2-jpschool.png" alt=""></li>
+                <li data-aos="fade-down-right"><img src="img/banner/6-2-kimchi.jpg" alt=""></li>
+                <li data-aos="fade-up-left"><img src="img/banner/6-2-library.png" alt=""></li>
+                <li data-aos="fade-up-right"><img src="img/banner/6-2-mask.png" alt=""></li>
+                <li data-aos="fade-left"><img src="img/banner/6-2-media.png" alt=""></li>
+                <li data-aos="fade-right"><img src="img/banner/6-2-mikan.png" alt=""></li>
+                <li data-aos="fade-down-right"><img src="img/banner/6-2-naturalshop.jpg" alt=""></li>
+                <li data-aos="fade-up"><img src="img/banner/6-2-sakura-bread.png" alt=""></li>
+                <li data-aos="fade-down"><img src="img/banner/6-2-world200.jpg" alt=""></li>
+            </ul>
+        </section>
+        <section class="logo">
+            <h2 class="bn-h2"><span class="ini-orange">L</span>ogo, Icon</h2>
+            <ul class="logolist">
+                <li data-aos="zoom-in-up"><img src="img/banner/furutoru.jpg" alt="ふるとる"></li>
+                <li data-aos="zoom-in-up"><img src="img/banner/liquor.jpg" alt="お酒"></li>
+                
+                <li data-aos="zoom-in-up"><img src="img/banner/next_stage.png" alt="ネクスト"></li>
+                <li data-aos="zoom-in-up"><img src="img/banner/bizutto.jpg" alt="Bizutto"></li>
+                <li data-aos="zoom-in-up"><img src="img/banner/dinslogo.png" alt="dins"></li>
+               <li data-aos="zoom-in-up"><img src="img/banner/showidth.jpg" alt="showith"></li>
+               <li data-aos="zoom-in-up"><img src="img/banner/sophiscope.jpg" alt="shopiscope"></li>
+               <li data-aos="zoom-in-up"><img src="img/banner/kangoplus.jpg" alt="看護プラス"></li>
+                <li data-aos="zoom-in-up"><img src="img/banner/hataraki01.png" alt="働きやすい職場"></li>
+                <li data-aos="zoom-in-up"><img src="img/banner/hokutologo.jpg" alt="hokuto"></li>
+                <li data-aos="zoom-in-up"><img src="img/banner/tokyomania.jpg" alt="東京マニア"></li>
+                <li data-aos="zoom-in-up"><img src="img/banner/yuzen.jpg" alt="雄善"></li>
+                <li data-aos="zoom-in-up"><img src="img/banner/hotaru.jpg" alt="ほたる"></li>
+                
+                <li data-aos="zoom-in-right"><img src="img/banner/pocket.jpg" alt="ロゴ・ポケット"></li>
+                <li data-aos="zoom-in-up"><img src="img/banner/kazuyoshi.jpg" alt="和義"></li>
+                
+                <li data-aos="zoom-in-up"><img src="img/banner/nakahayashi.jpg" alt="中林"></li>
+                
+                
+                
+                <li data-aos="zoom-in"><img src="img/banner/logo.png" alt=""></li>
+                <li data-aos="zoom-in-up"><img src="img/banner/logo01.png" alt=""></li>
+                <li data-aos="zoom-in-right"><img src="img/banner/logo02.png" alt=""></li>
+                <li data-aos="zoom-in-left"><img src="img/banner/logo3.png" alt=""></li>
+                <li data-aos="zoom-out"><img src="img/banner/logo04.png" alt=""></li>
+                <li data-aos="zoom-out-up"><img src="img/banner/logo05.png" alt=""></li>
+                <li data-aos="zoom-out-right"><img src="img/banner/icon1.png" alt=""></li>
+                <li data-aos="zoom-out-left"><img src="img/banner/icon2.png" alt=""></li>
+                <li data-aos="zoom-out-up"><img src="img/banner/icon3.png" alt=""></li>
+                <li data-aos="zoom-out-down"><img src="img/banner/icon4.png" alt=""></li>
+                <li data-aos="zoom-in-left"><img src="img/banner/icon5.png" alt=""></li>
+                <li data-aos="zoom-in-right"><img src="img/banner/icon6.png" alt=""></li>
+                <li data-aos="zoom-out"><img src="img/banner/icon7.png" alt=""></li>
+                <li data-aos="zoom-in"><img src="img/banner/icon8.png" alt=""></li>
+                <li data-aos="zoom-in-up"><img src="img/banner/icon9.png" alt=""></li>
+                
+            </ul>
+        </section>
+    </article>
+
+    <div id="page_top"><a href="#"></a></div>
+   <footer>
+       <p>&copy; 2018 SHO AKAMINE All rights reserved.</p>
+   </footer>
+</div>
+
+<!-- AOS アニメ -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+    });
+  </script>
+</body>
+</html>

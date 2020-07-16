@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>赤嶺祥のポートフォリオ</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="ウェブデザイナー赤嶺祥のポートフォリオです。HTML、CSS、Wordpress">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Bevan|Cinzel&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150393075-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150393075-5');
+</script>
+
+<!--[if lt IE 9]>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+   <link rel="shortcut icon" href="">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+   
+    <!-- jquery 読み込み -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+ 
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/bab523e654.js" crossorigin="anonymous"></script>
+  
+  <!-- slick -->
+  <link rel="stylesheet" href="js/slick/slick.css">
+   <link rel="stylesheet" href="js/slick/slick-theme.css">
+   <script src="js/slick/slick.min.js"></script>
+   <script src="js/slick/slick.js"></script>
+    
+<!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+ <!-- fadein アニメ-->
+     <script>
+     $(function(){
+    $(window).scroll(function (){
+        $('.fadein').each(function(){
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200){
+              $(this).addClass('active');
+            }
+        });
+    });
+});
+    </script>
+<!-- toppage scroll-->
+    <script>
+    jQuery(function() {
+    var pagetop = $('#page_top');   
+    pagetop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500); //0.5秒かけてトップへ移動
+        return false;
+    });
+});
+
+    </script>
+</head>
+<body>
+    <header>
+       <h1 class="logo-title"><a href="index.html"><img src="img/portfoliologo.png" alt="shomonzのポートフォリオ"></a></h1>
+       
+        <nav class="g-nav">
+            <ul class="flex-hr">
+                
+                <li id="top"><a href="index.html">TOP</a></li>
+                
+               
+                <li id="site"><a href="website.html">WEBSITE</a></li>
+               
+                
+                <li id="logo"><a href="banner.html">LOGO&amp;BANNER</a></li>
+                
+               
+                <li id="banner"> <a href="making.html">MAKING</a></li>
+                
+            </ul>
+        </nav>
+
+    </header>
+<div class="container">
+    <section class="make-top">
+        <img src="img/making_main.jpg" alt="WEBサイト制作の流れ" class="making-pc">
+        <img src="img/maiking-top-sp.jpg" alt="WEBサイト制作の流れ" class="making-sp">
+    </section>
+  
+  <div class="making-box">
+  
+  <section>
+      <img src="img/1-uchiawase.jpg" alt="打ち合わせ" class="making-pc">
+      <img src="img/1-meeting-sp.jpg" alt="打ち合わせ" class="making-sp">
+  </section>
+  
+  <section>
+      <img src="img/2-wireflame.jpg" alt="" class="making-pc">
+      <img src="img/2-wireflame-sp.jpg" alt="" class="making-sp">
+  </section>
+  
+  <section>
+      <img src="img/3-kanp.jpg" alt="デザインカンプ作成" class="making-pc">
+      <img src="img/3-kanp-sp.jpg" alt="デザインカンプ作成" class="making-sp">
+  </section>
+  
+  <section>
+      <img src="img/4-coding.jpg" alt="コーディング作業" class="making-pc">
+      <img src="img/4-cording-sp.jpg" alt="コーディング作業" class="making-sp">
+  </section>
+  
+  <section>
+      <img src="img/5-pri-del.jpg" alt="一次納品と修正" class="making-pc">
+      <img src="img/6-complete-sp.jpg" alt="完成納品" class="making-sp">
+  </section>
+  
+  <section>
+      <img src="img/6-complete.jpg" alt="完成納品" class="making-pc">
+  </section>
+    </div>
+ 
+    <div id="page_top"><a href="#"></a></div>
+       <footer class="making-foot">
+       <p>&copy; 2018 Shomonz All rights reserved.</p>
+   </footer>
+</div>
+
+<script src="js/jQuery.js"></script>
+</body>
+</html>

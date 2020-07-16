@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>赤嶺祥のポートフォリオ</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="ウェブデザイナー赤嶺祥のポートフォリオです。HTML、CSS、Wordpress">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Bevan|Cinzel&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150393075-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150393075-5');
+</script>
+
+<!--[if lt IE 9]>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+   <link rel="shortcut icon" href="">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+   
+    <!-- jquery 読み込み -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+ 
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/bab523e654.js" crossorigin="anonymous"></script>
+  
+  <!-- slick -->
+  <link rel="stylesheet" href="js/slick/slick.css">
+   <link rel="stylesheet" href="js/slick/slick-theme.css">
+   <script src="js/slick/slick.min.js"></script>
+   <script src="js/slick/slick.js"></script>
+    
+<!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+ <!-- fadein アニメ-->
+     <script>
+     $(function(){
+    $(window).scroll(function (){
+        $('.fadein').each(function(){
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200){
+              $(this).addClass('active');
+            }
+        });
+    });
+});
+    </script>
+<!-- toppage scroll-->
+    <script>
+    jQuery(function() {
+    var pagetop = $('#page_top');   
+    pagetop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500); //0.5秒かけてトップへ移動
+        return false;
+    });
+});
+
+    </script>
+</head>
+<body>
+    <header>
+       <h1 class="logo-title"><a href="index.html"><img src="img/portfoliologo.png" alt="shomonzのポートフォリオ"></a></h1>
+       
+        <nav class="g-nav">
+            <ul class="flex-hr">
+                
+                <li id="top"><a href="index.html">TOP</a></li>
+                
+               
+                <li id="site"><a href="website.html">WEBSITE</a></li>
+               
+                
+                <li id="logo"><a href="banner.html">LOGO&amp;BANNER</a></li>
+                
+               
+                <li id="banner"> <a href="making.html">MAKING</a></li>
+                
+            </ul>
+        </nav>
+
+    </header>
+<div class="container">
+           <ariticle class="topSlider">
+            <ul class="slider">
+               <li><a href="#"><img src="img/first_top.jpg" alt="WEBデザイン"></a></li>
+                <li><a href="#"><img src="img/banner_top.jpg" alt="バナー制作"></a></li>
+                <li><a href="#"><img src="img/logo_top.jpg" alt="ロゴ制作"></a></li>
+            </ul>
+        </ariticle>
+    <article id="about">
+       <h2 class="about-h2 fadein">About me</h2>
+       <section class="about-me fadein">
+        <p>
+            防水工事会社の社長をしながらWEBデザイナーをしている一風変わった経歴の持ち主です。</p>
+        <p>卒業後、韓国語通訳を経て防水工事の会社を設立、現場での施工と共に経理・法務・勤怠 管理・施工管理等の管理業務、経営管理業務を並行して行ってきました。
+2009 年よりチラシ・パンフレットのデザインを経験、2018 年から WEB サイト制作の請負を しており、更に技術を深めるため JavaScript 及び React を勉強しています。</p>
+        </section>
+        <section class="abount-num">
+            <div class="accordion">
+                <div class="item">
+                    <a class="accordion-control"><h3><img class="exp-img" src="/img/about01.png" alt="活かせる能力・経験">活かせる能力・経験</h3></a>
+                    <div class="accordion-panel">
+                        <div class="ac-left">
+                            <img src="img/webseisaku.jpg" alt="">
+                        </div>
+        
+                        <div class="ac-right">
+                            <img src="img/dougaseisaku.jpg" alt="">
+                        </div>
+                      </div>
+                </div>
+                <div class="item">
+                    <a class="accordion-control">
+                        <h3><img src="/img/about02.png" alt="私の背景" class="exp-img">私の背景</h3>
+                    </a>
+                    <div class="accordion-panel">
+                        <div class="myBackground"><img src="/img/korean.png" alt="韓国留学">韓国留学</div>
+                        
+                        <div class="myBackground"><img src="/img/bousui.png" alt="防水工事会社社長">防水工事会社社長</div>
+                        
+                        <div class="myBackground"><img src="/img/webdesign.png" alt="WEBデザイナー">WEBデザイナー</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="accordion-control"><h3><img src="/img/about03.png" alt="私にとってのWEB" class="exp-img">私にとってのWEB</h3></a>
+                    <div class="accordion-panel my-web">
+                        <p>父が広告代理店でデザイナーとして仕事をしていた関係で、私は7歳からパソコンに触れていました。PhotoshopやIllustratorでデザインしていく楽しさを感じつつ、インターネットの普及により様々な情報をWEBサイトから入手するようになり、自分で作って見たいと思うようになりました。</p>
+                        <p>動画編集の技術と、WEBサイト制作を組み合わせてより効果的に情報を提供できるWEBサイトを作りたいと常に思っています。</p>
+                        <p>スマートフォンの普及が進み、今後5Gが始まればインターネットを通した情報伝達は更に発展すると思われますが、そこには技術の進化についていけず、取り残される方々が出てくると思います。WEBサイトを制作し情報を発信できる技術を幸いにも得られた私は、そのような方々のためにWEBサイトを作り、情報提供の場を提供し、彼らの力になりたいと思っています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </article>
+    
+    <ariticle>
+       <h2 class="works-h2 fadein">My works</h2>
+        <div class="work-wrap fadein">
+            <div class="work wk-web">
+                <div class="cap">
+                    <h3 class="cap-h3">website</h3>
+                    <p class="txt"><a href="website.html">view more</a></p>
+                </div>
+            </div>
+            
+            <div class="work wk-logo">
+                <div class="cap">
+                    <h3 class="cap-h3">banner &amp; logo</h3>
+                    <p class="txt"><a href="banner.html">view more</a></p>
+                </div>
+            </div>
+            <div class="work wk-movie">
+                <div class="cap">
+                    <h3 class="cap-h3">movie</h3>
+                    <p class="txt"><a href="">view more</a></p>
+                </div>
+            </div>    
+
+        </div>
+    </ariticle>
+    
+    <aside>
+        
+    </aside>
+ 
+    <div id="page_top"><a href="#"></a></div>
+       <footer>
+       <p>&copy; 2018 Shomonz All rights reserved.</p>
+   </footer>
+</div>
+
+<script src="js/jQuery.js"></script>
+</body>
+</html>
